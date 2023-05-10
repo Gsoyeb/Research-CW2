@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='DEUTNPdeath.txt (Multiple Connections)' inline='true' name='federated.07kiy9t15fvpqx1ac07d10z4aoaz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HKGdeath' name='textscan.0bkqhll1ynxooc14twibv030ipff'>
+            <connection class='textscan' directory='C:/Users/golam/OneDrive/Desktop/Data_tableau/HKG/InputDB' filename='HKGdeath.txt' password='' server='' />
+          </named-connection>
+          <named-connection caption='USAdeath' name='textscan.1qysubw0j9iwu817y9vdp0ereuk3'>
+            <connection class='textscan' directory='C:/Users/golam/OneDrive/Desktop/Data_tableau/USA/InputDB' filename='USAdeath.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='400' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='USAdeath.txt+ (Multiple Connections)' inline='true' name='federated.0y5ocv41lbupl911b1ojx1rvc9aw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='USAdeath' name='textscan.10gugtl06h6o2t14x9gq91woxlr4'>
+            <connection class='textscan' directory='C:/Users/golam/University/Masters/Masters-SecondSemester/Research Methods/Coursework2/Data_tableau/USA/InputDB' filename='USAdeath.txt' password='' server='' />
+          </named-connection>
+          <named-connection caption='GBR_NPdeath' name='textscan.12t3dmn0qzgcdu15zvwil1s5cy85'>
+            <connection class='textscan' directory='C:/Users/golam/University/Masters/Masters-SecondSemester/Research Methods/Coursework2/Data_tableau/GBR_NP/InputDB' filename='GBR_NPdeath.txt' password='' server='' />
+          </named-connection>
+          <named-connection caption='FRATNPdeath' name='textscan.0b0v9k00uf99ua1gobm3e0um0adr'>
+            <connection class='textscan' directory='C:/Users/golam/University/Masters/Masters-SecondSemester/Research Methods/Coursework2/Data_tableau/FRATNP/InputDB' filename='FRATNPdeath.txt' password='' server='' />
+          </named-connection>
+          <named-connection caption='HKGdeath' name='textscan.0kuhbyu1mzpeub19tzril1yu6u0j'>
+            <connection class='textscan' directory='C:/Users/golam/University/Masters/Masters-SecondSemester/Research Methods/Coursework2/Data_tableau/HKG/InputDB' filename='HKGdeath.txt' password='' server='' />
+          </named-connection>
+          <named-connection caption='DEUTNPdeath' name='textscan.03iczlb0ctzmwc1eh77il0epnw73'>
+            <connection class='textscan' directory='C:/Users/golam/University/Masters/Masters-SecondSemester/Research Methods/Coursework2/Data_tableau/DEUTNP/InputDB' filename='DEUTNPdeath.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.10gugtl06h6o2t14x9gq91woxlr4' name='USAdeath.txt' table='[USAdeath#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='PopName' ordinal='0' />
+            <column datatype='integer' name='Area' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='YearReg' ordinal='3' />
+            <column datatype='integer' name='YearInterval' ordinal='4' />
+            <column datatype='string' name='Sex' ordinal='5' />
+            <column datatype='integer' name='Age' ordinal='6' />
+            <column datatype='string' name='AgeInterval' ordinal='7' />
+            <column datatype='string' name='Lexis' ordinal='8' />
+            <column datatype='integer' name='RefCode' ordinal='9' />
+            <column datatype='string' name='Access' ordinal='10' />
+            <column datatype='integer' name='Deaths' ordinal='11' />
+            <column datatype='string' name='NoteCode1' ordinal='12' />
+            <column datatype='string' name='NoteCode2' ordinal='13' />
+            <column datatype='string' name='NoteCode3' ordinal='14' />
+            <column datatype='integer' name='LDB' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.10gugtl06h6o2t14x9gq91woxlr4' name='USAdeath.txt' table='[USAdeath#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='PopName' ordinal='0' />
+            <column datatype='integer' name='Area' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='integer' name='YearReg' ordinal='3' />
+            <column datatype='integer' name='YearInterval' ordinal='4' />
+            <column datatype='string' name='Sex' ordinal='5' />
+            <column datatype='integer' name='Age' ordinal='6' />
+            <column datatype='string' name='AgeInterval' ordinal='7' />
+            <column datatype='string' name='Lexis' ordinal='8' />
+            <column datatype='integer' name='RefCode' ordinal='9' />
+            <column datatype='string' name='Access' ordinal='10' />
+            <column datatype='integer' name='Deaths' ordinal='11' />
+            <column datatype='string' name='NoteCode1' ordinal='12' />
+            <column datatype='string' name='NoteCode2' ordinal='13' />
+            <column datatype='string' name='NoteCode3' ordinal='14' />
+            <column datatype='integer' name='LDB' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PopName]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>PopName</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearReg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearReg]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>YearReg</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearInterval</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearInterval]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>YearInterval</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeInterval</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeInterval]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>AgeInterval</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lexis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lexis]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Lexis</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RefCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RefCode]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>RefCode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Access]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Access</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoteCode1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NoteCode1]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>NoteCode1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoteCode2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NoteCode2]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>NoteCode2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoteCode3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NoteCode3]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>NoteCode3</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LDB]</local-name>
+            <parent-name>[USAdeath.txt]</parent-name>
+            <remote-alias>LDB</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='7.2' />
+      </column>
+      <column caption='Age Interval' datatype='string' name='[AgeInterval]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Deaths (FRATNPdeath.txt)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+      <column caption='Pop Name' datatype='string' name='[PopName]' role='dimension' type='nominal' />
+      <column caption='Ref Code' datatype='integer' name='[RefCode]' role='dimension' type='ordinal' />
+      <column caption='Year Interval' datatype='integer' name='[YearInterval]' role='dimension' type='quantitative' />
+      <column caption='Year Reg' datatype='integer' name='[YearReg]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='USAdeath.txt' datatype='table' name='[__tableau_internal_object_id__].[USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782]' role='measure' type='quantitative' />
+      <column-instance column='[Deaths]' derivation='Sum' name='[diff:sum:Deaths:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths (FRATNPdeath.txt)]' derivation='Sum' name='[sum:Deaths (FRATNPdeath.txt):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[diff:sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[pcto:sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths (FRATNPdeath.txt):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='USAdeath.txt' id='USAdeath.txt_F239FFFAFF0241C78BC76A54D9885782'>
+            <properties context=''>
+              <relation connection='textscan.10gugtl06h6o2t14x9gq91woxlr4' name='USAdeath.txt' table='[USAdeath#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='PopName' ordinal='0' />
+                  <column datatype='integer' name='Area' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='integer' name='YearReg' ordinal='3' />
+                  <column datatype='integer' name='YearInterval' ordinal='4' />
+                  <column datatype='string' name='Sex' ordinal='5' />
+                  <column datatype='integer' name='Age' ordinal='6' />
+                  <column datatype='string' name='AgeInterval' ordinal='7' />
+                  <column datatype='string' name='Lexis' ordinal='8' />
+                  <column datatype='integer' name='RefCode' ordinal='9' />
+                  <column datatype='string' name='Access' ordinal='10' />
+                  <column datatype='integer' name='Deaths' ordinal='11' />
+                  <column datatype='string' name='NoteCode1' ordinal='12' />
+                  <column datatype='string' name='NoteCode2' ordinal='13' />
+                  <column datatype='string' name='NoteCode3' ordinal='14' />
+                  <column datatype='integer' name='LDB' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='USAdeath.txt+ (Multiple Connections)' name='federated.0y5ocv41lbupl911b1ojx1rvc9aw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y5ocv41lbupl911b1ojx1rvc9aw'>
+            <column datatype='integer' name='[Deaths (FRATNPdeath.txt)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex (FRATNPdeath.txt)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Sex (FRATNPdeath.txt)]' derivation='None' name='[none:Sex (FRATNPdeath.txt):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Deaths (FRATNPdeath.txt)]' derivation='Sum' name='[sum:Deaths (FRATNPdeath.txt):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Sex:nk]'>
+            <groupfilter function='level-members' level='[none:Sex:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths (FRATNPdeath.txt):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Sex (FRATNPdeath.txt):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Sex:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths (FRATNPdeath.txt):qk] + [federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths:qk])</rows>
+        <cols>[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{67EB66CA-B7FA-46A7-8BEB-BF53AF1AC7FD}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='USAdeath.txt+ (Multiple Connections)' name='federated.0y5ocv41lbupl911b1ojx1rvc9aw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y5ocv41lbupl911b1ojx1rvc9aw'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='7.2' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Pop Name' datatype='string' name='[PopName]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Count' name='[cnt:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PopName]' derivation='None' name='[none:PopName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[cnt:Age:qk]' />
+              <color column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Age:qk]' />
+              <text column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Age (bin):qk]' />
+              <text column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Age:qk]' />
+              <text column='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:PopName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{67A8FCFC-5476-4988-BC5B-60A56559C825}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='USAdeath.txt+ (Multiple Connections)' name='federated.0y5ocv41lbupl911b1ojx1rvc9aw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y5ocv41lbupl911b1ojx1rvc9aw'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='7.2' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Age (bin):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Year:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Deaths:qk]</rows>
+        <cols>([federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Age (bin):qk] + [federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Year:qk])</cols>
+        <show-full-range>
+          <column>[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[none:Age (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{F84CA671-6290-40A1-A3BE-3F0E03F8FD92}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84425197-D9EE-4CD2-9A9B-383E33A7FB3F}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0y5ocv41lbupl911b1ojx1rvc9aw].[sum:Age:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{52F046D4-AEAD-4491-9E7D-F4A8096FCF60}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EADA5B09-F30F-4AFE-ADB3-EB3318C669F2}' />
+    </window>
+  </windows>
+</workbook>
